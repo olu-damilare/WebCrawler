@@ -50,7 +50,7 @@ public class WebCrawler {
 
             // create a regex pattern matching a URL
             // that will validate the content of HTML in search of a URL.
-            String urlPattern = "(www|http:|https:)+[^\s]+[\\w]";
+            String urlPattern = "(www|http:|https:)+[^\\s]+[\\w]";
             Pattern pattern = Pattern.compile(urlPattern);
             Matcher matcher = pattern.matcher(rawHTML);
 
